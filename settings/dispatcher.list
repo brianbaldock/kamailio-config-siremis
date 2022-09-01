@@ -1,0 +1,12 @@
+#
+# dispatcher destination sets (groups)
+#
+
+# line format
+# setid(int) destination(sip uri) flags(int,opt) priority(int,opt) attributes(str,opt)
+
+# gateways
+1 sip:202.30.249.27:5060
+
+# gateways
+2 sip:202.30.249.33:5070
