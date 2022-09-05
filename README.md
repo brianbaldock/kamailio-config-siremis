@@ -218,6 +218,14 @@ $ vi settings/help.json
 
 <br>
 
+## References
+
+1. Kamailio Module [Page](https://www.kamailio.org/docs/modules/5.5.x/)
+2. Kamailio Core [Page](http://www.kamailio.org/wiki/cookbooks/5.5.x/core)
+3. Kamilio PseudoVariables [page](https://www.kamailio.org/wiki/cookbooks/5.5.x/pseudovariables)
+
+<br>
+
 ## Contact
 
 [Junho Kim](libtv@naver.com) <br>
