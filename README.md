@@ -222,7 +222,7 @@ $ vi settings/help.json
 
 1. Kamailio Module [Page](https://www.kamailio.org/docs/modules/5.5.x/)
 2. Kamailio Core [Page](http://www.kamailio.org/wiki/cookbooks/5.5.x/core)
-3. Kamilio PseudoVariables [page](https://www.kamailio.org/wiki/cookbooks/5.5.x/pseudovariables)
+3. Kamilio PseudoVariables [Page](https://www.kamailio.org/wiki/cookbooks/5.5.x/pseudovariables)
 
 <br>
 
