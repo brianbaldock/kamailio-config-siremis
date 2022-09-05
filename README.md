@@ -176,6 +176,8 @@ $ vi /etc/rsyslog.conf
 $ service rsyslog restart
 ```
 
+<br>
+
 ## setting kamailio-cfg
 
 1. edit your address
