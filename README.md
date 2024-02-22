@@ -35,8 +35,7 @@ sudo mv kamailio.gpg /usr/share/keyrings/
 
 ```bash
 sudo tee /etc/apt/sources.list.d/kamailio.list<<EOF
-deb "[signed-by=/usr/share/keyrings/kamailio.gpg] http://deb.kamailio.org/kamailio57 jammy main" | sudo tee /etc/apt/sources.list.d/kamailio.list
-deb-src "[signed-by=/usr/share/keyrings/kamailio.gpg] http://deb.kamailio.org/kamailio57 jammy main" | sudo tee /etc/apt/sources.list.d/kamailio.list
+deb [signed-by=/usr/share/keyrings/kamailio.gpg] http://deb.kamailio.org/kamailio57 jammy main
 EOF
 ```
 
