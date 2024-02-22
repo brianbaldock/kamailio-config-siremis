@@ -157,7 +157,7 @@ sudo a2enmod php7.4
 1. execute
 
 ```bash
-curl -fsSL https://deb.nodesource.com/setup_21.x | sudo -E bash - &&\
+curl -fsSL https://deb.nodesource.com/setup_21.x | sudo -E bash -
 sudo apt install -y nodejs
 sudo apt install build-essential
 ```
