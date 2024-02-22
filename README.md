@@ -65,7 +65,7 @@ exit
 8. create database
 
 ```bash
-vi  /etc/kamailio/kamctlrc
+sudo vi /etc/kamailio/kamctlrc
 ```
 
 > edit your DOMAIN
@@ -121,10 +121,12 @@ cd /var/www/
 git clone https://github.com/asipto/siremis
 
 cd siremis
-make apache24-conf | tee /etc/apache2/sites-enabled/siremis.conf
+sudo make apache24-conf | sudo tee /etc/apache2/sites-enabled/siremis.conf
 
-make prepare24
-make chown
+sudo make prepare24
+sudo make chown
+sudo a2ensite siremis
+sudo systemctl reload apache2
 ```
 
 3. set siremis user in mysql
@@ -142,8 +144,8 @@ exit;
 4. execute
 
 ```bash
-a2enmod rewrite
-systemctl restart apache2
+sudo a2enmod rewrite
+sudo systemctl restart apache2
 
 # next line is disable on php8.1
 sudo a2dismod php8.1
