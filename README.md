@@ -27,15 +27,16 @@ $ apt-get install gnupg2 mariadb-server curl unzip -y
 3. add apt-key
 
 ```bash
-$ wget -O- http://deb.kamailio.org/kamailiodebkey.gpg | sudo apt-key add -
+$ wget -O- http://deb.kamailio.org/kamailiodebkey.gpg | gpg --dearmor > kamailio.gpg
+$ sudo mv kamailio.gpg /usr/share/keyrings/
 ```
 
 4. update kamailio version
 
 ```bash
 $ sudo tee /etc/apt/sources.list.d/kamailio.list<<EOF
-deb     http://deb.kamailio.org/kamailio55 focal main
-deb-src http://deb.kamailio.org/kamailio55 focal main
+deb "[signed-by=/usr/share/keyrings/kamailio.gpg] http://deb.kamailio.org/kamailio57 jammy main" | sudo tee /etc/apt/sources.list.d/kamailio.list
+deb-src "[signed-by=/usr/share/keyrings/kamailio.gpg] http://deb.kamailio.org/kamailio57 jammy main" | sudo tee /etc/apt/sources.list.d/kamailio.list
 EOF
 ```
 
