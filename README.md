@@ -127,6 +127,11 @@ sudo make prepare24
 sudo make chown
 sudo a2ensite siremis
 sudo systemctl reload apache2
+
+Open a web browser from a different computer
+Go to http://<YourServerIP>/siremis
+Complete the configuration of Siremis, make sure to check the "Create DB" option so that the database is created.
+
 ```
 
 3. set siremis user in mysql
